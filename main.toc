@@ -1,0 +1,36 @@
+\select@language {spanish}
+\contentsline {section}{RESUMEN}{\es@scroman {iv}}{section*.1}
+\contentsline {section}{ABSTRACT}{\es@scroman {iv}}{section*.2}
+\contentsline {section}{GLOSARIO}{\es@scroman {v}}{section*.3}
+\contentsline {section}{ÍNDICE DE FIGURAS}{\es@scroman {viii}}{section*.4}
+\contentsline {section}{ÍNDICE DE TABLAS}{\es@scroman {viii}}{section*.5}
+\contentsline {section}{INTRODUCCIÓN}{1}{section*.6}
+\contentsline {section}{CAPÍTULO 1: DEFINICIÓN DEL PROBLEMA}{2}{section*.6}
+\contentsline {subsection}{\numberline {1.1}CONTEXTO}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}PROBLEMA}{2}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}DIFERENCIAS}{2}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}TABLERO}{2}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2}VISIBILIDAD}{3}{subsubsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.3}MOVIMIENTO}{4}{subsubsection.1.3.3}
+\contentsline {subsubsection}{\numberline {1.3.4}TAMAÑO}{4}{subsubsection.1.3.4}
+\contentsline {subsection}{\numberline {1.4}GRAFOS}{4}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}ENFOQUE}{5}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}OBJETIVO DE LA SOLUCIÓN}{6}{subsection.1.6}
+\contentsline {subsubsection}{\numberline {1.6.1}OBJETIVOS GENERALES}{6}{subsubsection.1.6.1}
+\contentsline {subsubsection}{\numberline {1.6.2}OBJETIVOS ESPECÍFICOS}{6}{subsubsection.1.6.2}
+\contentsline {section}{CAPÍTULO 2: MARCO CONCEPTUAL}{7}{Item.3}
+\contentsline {subsection}{\numberline {2.1}PATHFINDING}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}TEORIA DE GRAFOS}{7}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}DEFINICION DE GRAFO}{7}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}CAMINO}{8}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}COSTO}{8}{subsubsection.2.2.3}
+\contentsline {subsection}{\numberline {2.3}ALGORITMOS}{9}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}DIJKSTRA'S}{10}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}A*}{11}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}HEUTISTICAS}{13}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}ABSTRACCIONES DE MAPA}{13}{subsubsection.2.3.4}
+\contentsline {section}{CAPÍTULO 3: PROPUESTA DE SOLUCIÓN}{15}{Item.12}
+\contentsline {section}{CAPÍTULO 4: VALIDACIÓN DE LA SOLUCIÓN}{16}{Item.12}
+\contentsline {section}{CAPÍTULO 5: CONCLUSIONES}{17}{Item.12}
+\contentsline {section}{ANEXOS}{18}{section*.7}
+\contentsline {section}{REFERENCIAS BIBLIOGRÁFICAS}{19}{section*.8}

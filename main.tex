@@ -1,0 +1,212 @@
+\documentclass[letterpaper,12pt]{article}
+
+% @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>
+% VALORES A MODIFICAR POR USTED:
+% @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>
+
+% NOTE: Leer nota en el README sobre la font.
+
+\newcommand{\titulo}{Título de la memoria}
+\newcommand{\ciudad}{Valparaíso} % e.g. Valparaíso
+% TODO: Consultar el formato de los nombres:
+\newcommand{\nombrealumno}{Ricardo Gamboa Arias}
+\newcommand{\nombreprofesor}{Elizabeth Montero}
+\newcommand{\nombrecorreferente}{Nombre del correferente}
+% Mes y año del examen
+\newcommand{\mesexamen}{Diciembre}
+\newcommand{\anioexamen}{2018}
+% Dedicatoria y agradecimientos
+\newcommand{\dedicatoria}{
+
+}
+\newcommand{\agradecimientos}{
+
+}
+\newcommand{\resumen}{
+
+}
+\newcommand{\resumeningles}{
+
+}
+\newcommand{\palabrasclave}{
+
+}
+\newcommand{\palabrasclaveingles}{
+
+}
+% @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>
+
+% Paquete para importar imágenes
+\usepackage{graphicx}
+% Directorio de las imágenes
+\graphicspath{ {figures/} }
+
+% Idioma y fuentes
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+% Paquete para definir cualquier tamaño de font
+\usepackage{anyfontsize}
+
+% Seleccionar font
+\setmainfont{Carlito}
+
+% Tamaño de la página y márgenes
+\usepackage[letterpaper,top=2.5cm,bottom=3cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Determinar entrelineado:
+\renewcommand{\baselinestretch}{1.0}
+
+% Eliminar sangrías:
+\setlength{\parindent}{0cm}
+
+% Paquete para definir los formatos de los títulos
+\usepackage[explicit]{titlesec}
+
+\titleformat{name=\section}[block]{\fontsize{16}{24}\selectfont\bfseries}{}{0pt}{#1}
+\titleformat{name=\section,numberless}[block]{\fontsize{16}{24}\selectfont\bfseries}{}{0pt}{#1}
+\titlespacing*{name=\section}{0pt}{0pt}{0.5cm}
+\titlespacing*{name=\section,numberless}{0pt}{0pt}{0.5cm}
+
+% Separación entre parrafos
+\setlength{\parskip}{0.4cm}
+
+% Paquetes de utilidad general
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{breakcites}
+\usepackage{listings}
+
+% Formato de las tablas de contenido
+\usepackage[tocflat]{tocstyle}
+\usetocstyle{allwithdot}
+
+% Para obtener el número de la última página
+\usepackage{lastpage}
+
+% Header y footer
+\usepackage{fancyhdr}
+\fancypagestyle{portada}{
+    \lhead{}
+    \chead{}
+    \rhead{}
+    \lfoot{}
+    \cfoot{\fontsize{10}{12}\selectfont \thepage}
+    \rfoot{}
+    \renewcommand{\headrulewidth}{0pt}
+}
+\fancypagestyle{intermedio}{
+    \lhead{}
+    \chead{\fontsize{10}{12}\selectfont\MakeUppercase{\titulo}}
+    \rhead{}
+    \lfoot{}
+    \cfoot{\fontsize{10}{12}\selectfont Página \textbf{\thepage}\ de \textbf{\pageref{LastPage}}}
+    \rfoot{}
+    \renewcommand{\headrulewidth}{1pt}
+}
+
+% Comandos para secciones
+\newcommand{\secnumbersection}[1]{
+\addtocounter{section}{1}
+\section*{CAPÍTULO \thesection \texorpdfstring{\\}\ #1}
+\addcontentsline{toc}{section}{CAPÍTULO \thesection : #1}
+\setcounter{subsection}{0}
+}
+\newcommand{\secnumberlesssection}[1]{
+\section*{#1}
+\phantomsection
+\addcontentsline{toc}{section}{#1}
+\setcounter{subsection}{0}
+}
+
+% Nombres
+\addto\captionsspanish{\renewcommand{\contentsname}{ÍNDICE DE CONTENIDOS}}
+\addto\captionsspanish{\renewcommand{\listfigurename}{ÍNDICE DE FIGURAS}}
+\addto\captionsspanish{\renewcommand{\listtablename}{ÍNDICE DE TABLAS}}
+\makeatletter
+\renewenvironment{thebibliography}[1]
+     {\secnumberlesssection{REFERENCIAS BIBLIOGRÁFICAS}
+      \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+
+% Personalizar Tabla de Contenidos
+
+\usepackage{tocloft}
+\renewcommand{\cftsecfont}{\fontsize{12}{14}\selectfont\fontspec{Carlito}}
+\renewcommand{\cftsubsecfont}{\fontsize{12}{14}\selectfont\fontspec{Carlito}}
+\renewcommand{\cftsubsubsecfont}{\fontsize{12}{14}\selectfont\fontspec{Carlito}}
+
+\renewcommand\cftfigfont{\fontsize{12}{14}\selectfont\fontspec{Carlito}}
+
+% Links sin color
+\usepackage{hyperref}
+\hypersetup{colorlinks = false}
+
+% @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>
+\begin{document}
+
+\pagestyle{portada}
+\pagenumbering{roman}
+\input{portadas}
+
+\newpage
+\input{glosario}
+
+%Índice de contenidos:
+\newpage
+\thispagestyle{portada}
+\tableofcontents
+
+%Índice de figuras:
+\newpage
+\thispagestyle{portada}
+\phantomsection
+\addcontentsline{toc}{section}{ÍNDICE DE FIGURAS}
+\listoffigures
+\phantomsection
+\addcontentsline{toc}{section}{ÍNDICE DE TABLAS}
+\listoftables
+
+\newpage
+\pagestyle{intermedio}
+\pagenumbering{arabic}
+\input{introduccion}
+
+\newpage
+\input{definicion_del_problema}
+\newpage
+\input{marco_conceptual}
+\newpage
+\input{propuesta_de_solucion}
+\newpage
+\input{validacion_de_la_solucion}
+\newpage
+\input{conclusiones}
+
+\newpage
+\input{anexos}
+
+\newpage
+% Bibliografía estilo IEEE con las citas "especiales".
+\bibliographystyle{IEEEtranSN}
+\bibliography{bibliografia}{}
+
+\end{document}

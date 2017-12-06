@@ -1,0 +1,10 @@
+\select@language {spanish}
+\contentsline {figure}{\numberline {1}{\ignorespaces Ejemplo de \textit {pathfinding}}}{3}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Ejemplo de movimiento entre Nodo central, sus cuatro direcciones cardinales y las diagonales en colores diferentes.}}{5}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Ejemplo de Grafo}}{8}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Ejemplo de Camino en un Grafo}}{8}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Ejemplo de Camino en un Grafo con Costo en sus arcos}}{9}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Pseudo Codigo de algoritmo de \textit {Dijstra's}}}{10}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Ejemplo de la aplicacion del algoritmo de Djkstra's}}{11}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Pseudo Codigo de algoritmo \textit {A*}}}{12}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Comparacion entre Dijkstra's y A*}}{12}{figure.9}
